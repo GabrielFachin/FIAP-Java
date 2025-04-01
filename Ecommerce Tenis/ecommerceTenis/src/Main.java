@@ -25,24 +25,32 @@ public class Main {
         tenis.tamanho = leitura.nextInt();
 
         //sout
-        System.out.println("Agora digie a cor");
+        System.out.println("Agora digite a cor");
 
         //var.propiedade = variavel.nextDado
         tenis.cor = leitura.next();
 
-        System.out.println("Modelo: ");
-        tenis.modelo = leitura.next();
 
         System.out.println("Preço: ");
         tenis.preco = leitura.nextInt();
 
-        System.out.println("Disponibilidade: ");
-        tenis.disponivel = leitura.nextBoolean();
+
+        //Aumento de preço usando funções
+        System.out.println("Insira aqui o aumento em porcentagem");
+
+        //objeto.método(parametro/arg) obj(scanner).nextDado
+        tenis.aumentarPreco(leitura.nextFloat());
+
+        //Exibir o valor atualizado do tenis
+        System.out.println("Valor atualizado: " + tenis.preco);
 
 
+        //Salva o return do método de desconto na váriavel valor, após o Scanner se chamado.
+        System.out.println("Desconto a ser aplicado: ");
+        double valor = tenis.aplicarDesconto(leitura.nextFloat());
 
+        System.out.println("Valor final: " + valor);
 
-        System.out.println("o seu tênis de cor: " + tenis.cor + "modelo " + tenis.modelo + "tamanho " +tenis.tamanho + ",custo " +tenis.preco + "está disponivel? " +tenis.disponivel);
 
     }
 
