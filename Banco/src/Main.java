@@ -13,6 +13,4 @@ public static void main(String[] args) {
     System.out.println("Certo," + cliente.nome + "Agora informe seu CPF: ");
     cliente.cpf = scan.nextLine();
 
-
-
 }
