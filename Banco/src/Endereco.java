@@ -12,10 +12,10 @@ public class Endereco {
 
     String retornarEndereco(){
 
-    String dados =
+    String dados = "Logradouro :" + logradouro + "Número: " + numero + "complemento: " + complemento + "cep: " + cep;
 
 
-        return
+        return dados;
     }
 
 }

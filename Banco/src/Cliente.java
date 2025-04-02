@@ -9,7 +9,8 @@ public class Cliente {
 
     String retornarDados(){
 
+        String dados = "Nome: " + nome + "cpf: " + cpf + endereco;
 
-        return 
+        return dados;
     }
 }
