@@ -1,6 +1,6 @@
 public class ContaCorrente {
 
-    double saldo = 0;
+    double saldo = 0.0;
 
     Cliente titular;
 

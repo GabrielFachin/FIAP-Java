@@ -9,7 +9,7 @@ public class Cliente {
 
     String retornarDados(){
 
-        String dados = "Nome: " + nome + "cpf: " + cpf + endereco;
+        String dados = "Nome: " + nome + ", cpf: " + cpf + "endereço: " + endereco.retornarEndereco();
 
         return dados;
     }

@@ -7,10 +7,13 @@ public class Main {
         ContaCorrente conta = new ContaCorrente();
         Endereco endereco = new Endereco();
 
+        cliente.endereco = endereco;
+        conta.titular = cliente;
+
         System.out.println("Olá! por favor, digite seu nome!");
         cliente.nome = scan.nextLine();
 
-        System.out.println("Certo," + cliente.nome + "Agora informe seu CPF: ");
+        System.out.println("Certo," + cliente.nome + ", Agora informe seu CPF: ");
         cliente.cpf = scan.nextLine();
 
         System.out.println("Agora precisamos dos dados do seu endereço, por favor, nos informe");
@@ -27,8 +30,8 @@ public class Main {
         endereco.cep = scan.nextLine() + scan.next();
 
         System.out.println("vamos confirmar seus dados abaixo");
-        System.out.println(cliente.retornarDados());
         System.out.println(endereco.retornarEndereco());
+        System.out.println(cliente.retornarDados());
         System.out.println("verfique se seus dados estão corretos");
 
 
@@ -38,8 +41,7 @@ public class Main {
         System.out.println("Agora, desejas sacar alguma quantidade? digite o valor");
         conta.retirar(scan.nextDouble());
 
-        System.out.println("Seu novo saldo é:");
-        conta.retornarSaldo();
+        System.out.println("Seu novo saldo é:" + conta.retornarSaldo());
 
 
     }
