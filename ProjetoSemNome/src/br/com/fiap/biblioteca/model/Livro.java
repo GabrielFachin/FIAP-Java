@@ -2,21 +2,46 @@ package br.com.fiap.biblioteca.model;
 
 public class Livro {
 
-    public String titulo;
-    int paginas;
-    boolean disponivel;
+    private String titulo;
+    private int paginas;
+    private boolean disponivel;
 
 
-
-    void alocar(){
-
-        disponivel = false;
+    public String getTitulo(){
+        return titulo;
 
     }
 
-    void receber(){
+    public void setTitulo(String titulo){
 
-        disponivel = true;
-
+        this.titulo = titulo;
     }
+
+
+
+
+
+    public int getPaginas(){
+        return paginas;
+    }
+
+    public void setPaginas(int paginas){
+
+        this.paginas = paginas;
+    }
+
+
+
+
+
+    public boolean isDisponivel(){
+
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel){
+
+        this.disponivel = disponivel;
+    }
+
 }
