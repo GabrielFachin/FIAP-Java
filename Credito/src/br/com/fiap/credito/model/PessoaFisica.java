@@ -4,6 +4,10 @@ public class PessoaFisica extends Pessoa {
    private String cpf;
    private String rg;
 
+public PessoaFisica(String nome) {
+   super(nome);
+}
+
    public String getCpf() {
       return cpf;
    }

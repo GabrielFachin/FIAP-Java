@@ -4,6 +4,10 @@ public class PessoaJuridica extends Pessoa {
    private String cnpj;
    private boolean ativo;
 
+   public PessoaJuridica(String nome) {
+      super(nome);
+   }
+
    public String getCnpj() {
       return cnpj;
    }

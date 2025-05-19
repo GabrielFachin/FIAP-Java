@@ -5,6 +5,13 @@ public class Pessoa {
   private  int idade;
   private  Endereco endereco;
 
+
+
+  Pessoa(String nome) {
+      this.nome = nome;
+
+  }
+
     public String getNome() {
         return nome;
     }
